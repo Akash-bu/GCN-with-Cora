@@ -1,4 +1,4 @@
-# GCN-with-Cora
+# GCN and GAT with Cora dataset
 
 # GCN Implementation: Semi-Supervised Node Classification
 
@@ -36,3 +36,5 @@ Once training is complete, the model's performance is measured on unseen data:
 - **Inference Mode**: `model.eval()` disables dropout to ensure consistent, deterministic predictions.
 - **Prediction**: The class with the highest log-probability is selected using `argmax(dim=-1)`.
 - **Testing**: Accuracy is calculated by comparing these predictions against the ground-truth labels (`data.y`), but strictly for nodes where `test_mask` is `True`.
+
+## Also a 2 layer GAT is implemented to prove the usefulness of attention mechanism on graphs over normal GCN
